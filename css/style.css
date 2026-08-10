@@ -407,8 +407,23 @@ img { max-width: 100%; display: block; }
   transform: translateY(-4px);
   border-color: var(--accent);
 }
-.project-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; }
+.project-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.project-card h3 { font-size: 1.1rem; font-weight: 700; }
 .project-card p { color: var(--text-dim); font-size: 0.92rem; margin-bottom: 20px; }
+
+.project-link {
+  color: var(--text-dim);
+  flex-shrink: 0;
+  transition: color var(--transition), transform var(--transition);
+}
+.project-link svg { width: 19px; height: 19px; display: block; }
+.project-link:hover { color: var(--accent); transform: translateY(-2px); }
 
 /* ---------- Tags ---------- */
 .tag-list {
