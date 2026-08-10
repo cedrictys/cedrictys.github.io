@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cedric Tan — Software Engineer</title>
+<meta name="description" content="Cedric Tan — Full-stack software engineer building enterprise data-protection experiences with Angular, Java, and AI-powered tooling.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2338bdf8%22>CT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<header id="site-header">
+  <nav class="nav container">
+    <a href="#home" class="logo">CT<span>.</span></a>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="nav-links" class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link cta">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero container">
+    <p class="eyebrow reveal">Hi, I'm</p>
+    <h1 class="reveal">Cedric Tan</h1>
+    <h2 class="hero-role reveal">Full-Stack Software Engineer</h2>
+    <p class="hero-blurb reveal">
+      I build enterprise data-protection experiences — Angular WebUIs over Java REST services
+      for NetBackup and Cohesity DataProtect — spanning virtualization, recovery, RBAC, and
+      AI-powered internal tooling. Dual background in Computer Science &amp; Statistics.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
+      <a href="assets/Cedric_Tan_Resume.pdf" class="btn btn-outline" download>Download Résumé</a>
+    </div>
+    <ul class="hero-socials reveal">
+      <li>
+        <a href="mailto:cedrictan.jobs@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/cedric-tan-ys/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.25h4V23h-4V8.25zM8.5 8.25h3.83v2.02h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8.25z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" id="github-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55v-2.15c-3.2.7-3.88-1.35-3.88-1.35-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.53-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.16 1.18.92-.26 1.9-.38 2.88-.39.98 0 1.96.13 2.88.39 2.2-1.49 3.16-1.18 3.16-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.82 1.18 3.08 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.08.78 2.17v3.22c0 .3.21.66.79.55C20.21 21.4 23.5 17.1 23.5 12 23.5 5.73 18.27.5 12 .5z"/></svg>
+        </a>
+      </li>
+    </ul>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <p class="section-label reveal">01 — About</p>
+    <h2 class="section-title reveal">A bit about me</h2>
+    <div class="about-grid">
+      <p class="about-text reveal">
+        I'm a software engineer at <strong>Cohesity</strong> (formerly Veritas Technologies), where I
+        ship features end-to-end across UX, REST web services, RBAC/discovery, and relational
+        schema for enterprise backup &amp; recovery products. My work spans virtualization
+        workloads — VMware, KVM, HPE VME/Morpheus, OLVM — plus recovery and single-file
+        restore flows used by real customers protecting real data.
+        <br><br>
+        I pair strong systems fundamentals with a data-driven, analytical approach from a dual
+        <strong> B.S. Computer Science &amp; B.A. Statistical Practice</strong> background. I'm known
+        for staying reliable under pressure — diagnosing and fixing issues fast, from smoke-test
+        blockers to Sev-1 defects and security findings. Most recently, I built an LLM-powered
+        internal tool that automates engineering-contribution traceability across Jira, defect
+        tracking, and Bitbucket.
+      </p>
+      <div class="about-facts reveal">
+        <div class="fact">
+          <span class="fact-label">Location</span>
+          <span class="fact-value">Minneapolis, MN</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Role</span>
+          <span class="fact-value">Software Engineer II, Cohesity</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Education</span>
+          <span class="fact-value">B.S. Computer Science &amp; B.A. Statistics, U of Minnesota</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Focus</span>
+          <span class="fact-value">Full-stack, data protection, LLM tooling</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat">
+        <span class="stat-number" data-target="65">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Jira deliverables shipped (2023–2026)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="238">0</span>
+        <span class="stat-label">eTrack incidents resolved, NetBackup 10.1.1 → 11.2</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-target="158">0</span>
+        <span class="stat-label">Coverity security findings fixed</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section container">
+    <p class="section-label reveal">02 — Experience</p>
+    <h2 class="section-title reveal">Where I've worked</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Software Engineer II (MTS II)</h3>
+            <span class="timeline-date">Apr 2025 – Present</span>
+          </div>
+          <p class="timeline-org">Cohesity Inc. (formerly Veritas Technologies) · Roseville, MN</p>
+          <ul>
+            <li>Led onboarding of <strong>HPE VME (Morpheus) and OLVM</strong> into Cohesity DataProtect — source registration, register-VM, source detail, and recovery flows in the Angular Iris WebUI over Java REST services — streamlining configuration workflows ~40%.</li>
+            <li>Added OLVM Single File Restore and completed KVM SFR/BLIB support in NetBackup; hardened source registration and discovery with validation to prevent invalid submissions.</li>
+            <li>Deployed and validated containerized WebUI/services on <strong>Kubernetes</strong> (Docker, Helm) with <strong>AWS S3/EC2</strong> as cloud backup and recovery targets.</li>
+            <li>Built an <strong>LLM-powered internal tool</strong> that queries Jira, defect-tracking systems, and Bitbucket to summarize engineering contributions, automating release traceability across 200+ incidents and pull requests.</li>
+            <li>Ran Scrum ceremonies for the WebUI pod — sprint planning, standups, backlog grooming, retrospectives.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Software Engineer I (MTS I)</h3>
+            <span class="timeline-date">Dec 2024 – Mar 2025</span>
+          </div>
+          <p class="timeline-org">Cohesity Inc. (formerly Veritas Technologies) · Roseville, MN</p>
+          <ul>
+            <li>Owned end-to-end <strong>KVM workload support</strong> for NetBackup, expanding coverage to a new hypervisor tier and reducing job completion time by ~45%.</li>
+            <li>Designed and shipped 5+ NetBackup Web UI features for full KVM workload management — host add/remove, credential-based registration, multi-host policies, recovery — plus the SQL schema changes and migrations backing them.</li>
+            <li>Maintained VMware workload continuity through the Cohesity–Veritas merger with zero backup and recovery regressions.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Software Engineer (Associate)</h3>
+            <span class="timeline-date">Jul 2023 – Dec 2024</span>
+          </div>
+          <p class="timeline-org">Veritas Technologies LLC · Roseville, MN</p>
+          <ul>
+            <li>Rebuilt <strong>VMware / vCloud recovery workflows</strong> in NetBackup over Java REST services and drove CX-readiness UX consistency across the VMware workflow.</li>
+            <li>Led multi-layer security and <strong>RBAC</strong> for VMware workloads — vSphere namespace operations, vCenter topology access checks, granular datacenter/vCloud permissions.</li>
+            <li>Resolved <strong>158 Coverity</strong> static-analysis security findings across Java and C++.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Software Engineer (Intern)</h3>
+            <span class="timeline-date">May 2022 – May 2023</span>
+          </div>
+          <p class="timeline-org">Veritas Technologies LLC · Roseville, MN</p>
+          <ul>
+            <li>Developed and maintained 10+ Java REST API endpoints; built Postman/Python automation to test them.</li>
+            <li>Shipped a NetBackup Web UI feature that reduced single-file restore time by <strong>80%</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-compact reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Full Stack Web Developer</h3>
+            <span class="timeline-date">Jan 2022 – May 2023</span>
+          </div>
+          <p class="timeline-org">Dept. of Mechanical Engineering, University of Minnesota · Minneapolis, MN</p>
+          <ul>
+            <li>Built responsive design and navigation improvements that increased traffic and engagement; built a Particle Decay Modeling Simulation in C#.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-compact reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Undergraduate Teaching Assistant</h3>
+            <span class="timeline-date">Sep 2021 – May 2022</span>
+          </div>
+          <p class="timeline-org">Dept. of Statistics, University of Minnesota · Minneapolis, MN</p>
+          <ul>
+            <li>Supervised lab sections of 30+ students; helped debug code and troubleshoot technology issues.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-compact reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Data Analyst Intern</h3>
+            <span class="timeline-date">May 2021 – Jul 2021</span>
+          </div>
+          <p class="timeline-org">Data And Sdn Bhd · Petaling Jaya, Malaysia</p>
+          <ul>
+            <li>Built Power BI models to analyze sales; cut web-scraping time by 60% with a Python script.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <p class="section-label reveal">03 — Projects</p>
+    <h2 class="section-title reveal">Things I've built</h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="project-card-top">
+          <h3>Contribution Intelligence Tool</h3>
+        </div>
+        <p>An LLM-powered pipeline that pulls live Jira, defect-tracking, and Bitbucket data and
+           generates a traceable, summarized report of engineering contributions across releases.</p>
+        <ul class="tag-list">
+          <li>Python</li><li>LLM APIs</li><li>Retrieval / Prompt Engineering</li><li>Jira &amp; Bitbucket APIs</li>
+        </ul>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card-top">
+          <h3>Vacation Tracker App</h3>
+        </div>
+        <p>A serverless, mobile-first single-page app that lets users build and manage a tracker
+           for their vacations, with map-based location data.</p>
+        <ul class="tag-list">
+          <li>React</li><li>Next.js</li><li>Node.js</li><li>Clerk</li><li>codehooks.io</li><li>Google Maps API</li>
+        </ul>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card-top">
+          <h3>Mario Fandom Wiki</h3>
+        </div>
+        <p>A social wiki-style website supporting users with and without accounts — viewing,
+           browsing, searching, and posting articles and social posts.</p>
+        <ul class="tag-list">
+          <li>Python</li><li>Flask</li><li>Jinja</li><li>jQuery</li><li>Quill.js</li><li>PostgreSQL</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <p class="section-label reveal">04 — Skills</p>
+    <h2 class="section-title reveal">Tools of the trade</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <h3>Languages</h3>
+        <ul class="tag-list">
+          <li>Java</li><li>Python</li><li>C#</li><li>C</li><li>C++</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>HTML/CSS</li><li>YAML</li><li>OCaml</li><li>R</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Front-End</h3>
+        <ul class="tag-list">
+          <li>Angular</li><li>RxJS</li><li>React</li><li>Next.js</li><li>Node.js</li><li>Component-driven WebUI</li><li>Responsive Design</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Back-End &amp; Web Services</h3>
+        <ul class="tag-list">
+          <li>Spring Boot</li><li>REST / Web Services</li><li>RBAC &amp; Access Control</li><li>API Design (Postman)</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Cloud &amp; DevOps</h3>
+        <ul class="tag-list">
+          <li>AWS (S3, EC2, IAM)</li><li>Kubernetes</li><li>Docker</li><li>Helm</li><li>CI/CD</li><li>Git</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Databases</h3>
+        <ul class="tag-list">
+          <li>SQL</li><li>MySQL</li><li>PostgreSQL</li><li>Schema Design &amp; Migrations</li><li>Query Optimization</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>AI / LLM</h3>
+        <ul class="tag-list">
+          <li>LLM-Powered Tooling</li><li>Prompt Engineering</li><li>Retrieval &amp; Summarization</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section container">
+    <p class="section-label reveal">05 — Education</p>
+    <h2 class="section-title reveal">Academic background</h2>
+
+    <div class="edu-card reveal">
+      <div class="timeline-head">
+        <h3>University of Minnesota, Twin Cities</h3>
+        <span class="timeline-date">Sept 2020 – May 2023</span>
+      </div>
+      <p class="timeline-org">B.S. Computer Science &amp; B.A. Statistical Practice — GPA 3.63/4.00, Dean's List</p>
+      <ul class="tag-list">
+        <li>Algorithms &amp; Data Structures</li>
+        <li>Machine Architecture &amp; Organization</li>
+        <li>Regression &amp; Correlated Data</li>
+        <li>Theory of Statistics</li>
+        <li>Intro to Statistical Analysis (TA)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <p class="section-label reveal">06 — Contact</p>
+    <h2 class="section-title reveal">Let's talk</h2>
+    <p class="contact-blurb reveal">
+      I'm always happy to connect about full-stack engineering, data protection systems, or
+      LLM-powered tooling. The fastest way to reach me is email.
+    </p>
+    <div class="contact-links reveal">
+      <a href="mailto:cedrictan.jobs@gmail.com" class="btn btn-primary">cedrictan.jobs@gmail.com</a>
+      <a href="https://www.linkedin.com/in/cedric-tan-ys/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Cedric Tan. Built with HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
