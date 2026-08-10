@@ -428,6 +428,11 @@ img { max-width: 100%; display: block; }
 }
 
 /* ---------- Education ---------- */
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .edu-card {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
@@ -435,6 +440,11 @@ img { max-width: 100%; display: block; }
   padding: 32px;
 }
 .edu-card .tag-list { margin-top: 18px; }
+.edu-activities {
+  color: var(--text-faint);
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
 
 /* ---------- Contact ---------- */
 .contact-blurb {
