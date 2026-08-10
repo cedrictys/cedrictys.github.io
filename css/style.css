@@ -76,8 +76,22 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   font-size: 1.15rem;
   letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: center;
 }
-.logo span { color: var(--accent); }
+.logo-prompt { color: var(--accent); }
+.logo-cursor { animation: blink 1.1s steps(2, start) infinite; }
+@keyframes blink { to { opacity: 0; } }
+
+.logo-ball {
+  width: 0.78em;
+  height: 0.78em;
+  display: inline-block;
+  margin-left: 2px;
+  transform: translateY(0.06em);
+}
+.logo-ball circle { fill: var(--accent); }
+.logo-ball .seam { fill: none; stroke: var(--bg); stroke-width: 1.1; }
 
 .nav-links {
   display: flex;
